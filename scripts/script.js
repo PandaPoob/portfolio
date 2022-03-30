@@ -75,7 +75,6 @@ function frontpageScrollAnimations() {
       scrub: 0.5,
       start: "top 70%",
       end: "10% 50%",
-      markers: true,
     },
   });
 
