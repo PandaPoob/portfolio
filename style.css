@@ -577,77 +577,6 @@ footer .copyright {
   margin-right: 3rem;
 }
 
-/*CLEOS PAGE*/
-/* #cleo-header {
-  background-color: var(--color-lighter);
-  overflow: hidden;
-  padding-block: 2rem 6rem;
-  padding-inline: 1rem;
-  min-height: 20vh;
-  position: relative;
-  z-index: 1;
-  margin-top: -2.5rem;
-}
-.cleo-text h1 {
-  margin-bottom: 0.5rem;
-}
-
-.cleo-text p {
-  margin-left: 0.3rem;
-}
-
-.header-cleo-img-container {
-  display: flex;
-  justify-content: center;
-}
-
-.header-cleo-img {
-  width: 25rem;
-}
-
-#cleo {
-  overflow: hidden;
-}
-
-#wide-cleo-img {
-  max-width: 45rem;
-}
-
-#cleo h2 {
-  margin-top: 10rem;
-}
-
-.cleo-gallery-img {
-  max-width: 30rem;
-  min-width: 15rem;
-  align-self: center;
-}
-
-#cleo-first-section {
-  display: flex;
-  gap: 1rem;
-  width: 250%;
-}
-
-#cleo-second-section {
-  margin-top: 1rem;
-  display: flex;
-  gap: 1rem;
-  min-height: 25vh;
-  width: 250%;
-}
-
-#cleo-third-section {
-  margin-top: 1rem;
-  display: flex;
-
-  gap: 1rem;
-  min-height: 25vh;
-  width: 250%;
-
-  margin-bottom: 8rem;
-} */
-
 @media (min-width: 640px) {
   footer {
     padding-block: 1rem 2rem;
@@ -719,7 +648,7 @@ footer .copyright {
     align-items: center;
     padding-block: 2rem;
     padding-inline: 3rem;
-    height: 25rem;
+    height: 28rem;
   }
   .second-detail-text {
     grid-column: 2/3;
@@ -873,18 +802,9 @@ footer .copyright {
   transform: translateY(100%);
 }
 
-/* .cleo-header-right {
-  transform: translateX(220%);
+.hide {
+  display: none;
 }
-
-.cleo-right {
-  transform: translateX(100%);
-}
-
-.cleo-left {
-  transform: translateX(-200%);
-}
- */
 /*PROGRESS BAR*/
 progress {
   position: fixed;
@@ -924,4 +844,34 @@ progress::-moz-progress-bar {
     #c7c7fc
   );
   background-attachment: fixed;
+}
+
+/*POPUPS*/
+.popup {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vw;
+  background-color: #00000099;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  display: none;
+  justify-content: center;
+}
+
+#popup-container {
+  margin-top: 1rem;
+  margin-inline: auto;
+  display: grid;
+  justify-content: center;
+}
+
+.popup-img {
+  max-width: 70vw;
+}
+
+#open-popup {
+  color: var(--color-cta);
+  cursor: pointer;
 }

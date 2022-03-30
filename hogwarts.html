@@ -16,6 +16,11 @@
     <link rel="icon" href="img/logo_og.svg" />
   </head>
   <body>
+        <section id="hg-popup" class="popup">
+     <div id="popup-container">
+       <img class="popup-img" src="/img/hg_popup.png" alt="">
+     </div>
+    </section>
     <nav class="navbar">
       <a href="index.html"
         ><img class="logo" src="img/logo.svg" alt="logo"
@@ -45,8 +50,6 @@
         >
       </div>
     <header class="project-header hidden">
-     
-    
         <h1>Hacked Hogwarts Student List</h1>
       </div>
     </header>
@@ -63,15 +66,7 @@
         <div class="mockup-right right">
           <h3>Introduction</h3>
           <p>
-            In this project I pretended to be a newly hired frontender for the
-            wizard school Hogwarts. Therefore I had to build a student list from
-            the given data and also add functions like filtering, sorting and
-            searching so I could easily navigate the student list. I also needed
-            to able to appoint different students to different squads or roles
-            and even expel them. Furthermore I should also be able to click on
-            each individual student card to see more details. If you are feeling
-            rebellious you may want to consider clicking the button at the
-            bottom of the page....
+          In this project I pretended to be a newly hired frontender for the wizard school Hogwarts. It is coded in Vanilla HTML, CSS and JavaScript. I built a student list from the given data and also made the navigation easier by adding functions like filtering, searching etc. I also needed to able to appoint different students to different squads or roles and even expel them. Furthermore you can also click on each individual student card to see more details. If you are feeling rebellious you may want to consider clicking the button at the bottom of the page....   
           </p>
           <div class="link-buttons">
             <form
@@ -95,21 +90,13 @@
           <div class="first-detail-text">
             <h3>Process</h3>
             <p>
-              Because this assignment had a lot of requirements, some even
-              conflicting, I had to carefully plan my course of action. I did so
-              by first making a list of all the functions I knew I needed and
-              then breaking down the different functions into smaller activity
-              diagrams that helped me maintain an overview. <br />
-              Part of the assignment was that it was coded in vanilla
-              JavaScript. I did so and separated functions as much as possible
-              to make it more manageable.
+              Because this assignment had a lot of requirements, some even conflicting, I had to carefully plan my course of action. I did so by first making a list of all the functions I knew I needed and then breaking down the different functions into smaller activity diagrams that helped me maintain an overview. 
+I started small with the requirement of wanting to show a list of students. I did this by fetching the data, cleaning it, creating my own object called Student with the cleaned data, cloning them and finally displaying them in the html. Afterwards I added other features function by function. 
+Since this was a very complex assignment I had to use a lot of return values and parameters. I also had to use closure as some of my functions worked inside of my details popup.
             </p>
-            <a
-              class="hover-effect-full"
-              target="_blank"
-              href="https://drive.google.com/file/d/1tFqKhCVJDInGpdy6O2ApfbZQMynVmxeY/view?usp=sharing"
-              >See full activity diagram here!</a
-            >
+            <p
+            id="open-popup"
+              class="hover-effect-full">See full activity diagram here!</p>
           </div>
           <div class="first-detail-img-container">
             <img
@@ -120,6 +107,7 @@
           </div>
         </div>
       </section>
+   
       <section class="second-detail left">
         <div class="second_detail_colorbox">
           <div class="second-detail-text">
@@ -169,5 +157,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="scripts/burgermenu.js"></script>
     <script src="scripts/projects.js"></script>
+      <script src="scripts/hg_popup.js"></script>
   </body>
 </html>
