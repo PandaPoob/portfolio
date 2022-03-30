@@ -113,33 +113,33 @@ input.button {
 }
 
 .go-back-link {
-  color: var(--color-cta);
+  color: var(--color-lighest);
+  background-color: rgba(255, 41, 134, 0.925);
   text-decoration: none;
   font-weight: 600;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
-  background-color: rgba(255, 255, 255, 0.925);
   border-radius: 1rem;
   transition: 0.7s ease;
 }
 
 .go-back-link:hover {
-  color: var(--color-lighest);
-  background-color: rgba(255, 41, 134, 0.925);
+  color: var(--color-cta);
+  background-color: rgba(32, 16, 54, 0.925);
 }
 
 /*Back to index*/
-#go-back-cleo {
-  display: flex;
-  justify-content: center;
+/* #go-back-cleo {
+  position: sticky;
+  top: 1rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
   z-index: 4;
-  margin-bottom: 4rem;
 }
 
 .go-back-cleo-link {
   text-decoration: none;
   font-weight: 600;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
-
   border-radius: 1rem;
   color: var(--color-lighest);
   background-color: rgba(255, 41, 134, 0.925);
@@ -149,7 +149,7 @@ input.button {
 .go-back-cleo-link:hover {
   color: var(--color-cta);
   background-color: rgba(32, 16, 54, 0.925);
-}
+} */
 
 /*menu*/
 .logo {
@@ -589,7 +589,7 @@ footer .copyright {
 }
 
 /*CLEOS PAGE*/
-#cleo-header {
+/* #cleo-header {
   background-color: var(--color-lighter);
   overflow: hidden;
   padding-block: 2rem 6rem;
@@ -597,6 +597,7 @@ footer .copyright {
   min-height: 20vh;
   position: relative;
   z-index: 1;
+  margin-top: -2.5rem;
 }
 .cleo-text h1 {
   margin-bottom: 0.5rem;
@@ -629,12 +630,14 @@ footer .copyright {
 
 .cleo-gallery-img {
   max-width: 30rem;
+  min-width: 15rem;
+  align-self: center;
 }
 
 #cleo-first-section {
   display: flex;
   gap: 1rem;
-  min-width: 150%;
+  width: 250%;
 }
 
 #cleo-second-section {
@@ -642,17 +645,19 @@ footer .copyright {
   display: flex;
   gap: 1rem;
   min-height: 25vh;
-  min-width: 150%;
+  width: 250%;
 }
 
 #cleo-third-section {
   margin-top: 1rem;
   display: flex;
+
   gap: 1rem;
   min-height: 25vh;
-  min-width: 150%;
-  margin-bottom: 4rem;
-}
+  width: 250%;
+
+  margin-bottom: 8rem;
+} */
 
 @media (min-width: 640px) {
   footer {
@@ -738,14 +743,14 @@ footer .copyright {
     grid-row: 1/2;
   }
   /*CLEO PAGE*/
-  #cleo-header {
+  /*  #cleo-header {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 8rem;
     padding-block: 6rem;
-  }
+  } */
 }
 
 @media (min-width: 1366px) {
@@ -860,7 +865,7 @@ footer .copyright {
   transform: translateY(100%);
 }
 
-.cleo-header-right {
+/* .cleo-header-right {
   transform: translateX(220%);
 }
 
@@ -869,9 +874,9 @@ footer .copyright {
 }
 
 .cleo-left {
-  transform: translateX(-100%);
+  transform: translateX(-200%);
 }
-
+ */
 /*PROGRESS BAR*/
 progress {
   position: fixed;

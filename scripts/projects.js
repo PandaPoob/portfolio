@@ -13,7 +13,7 @@ function start() {
     ease: Power2.easeOut,
   });
 
-  let goBackGrow = gsap
+  /*   let goBackGrow = gsap
     .timeline({
       repeat: Infinity,
       repeatDelay: 8,
@@ -31,7 +31,7 @@ function start() {
     .to(goBack, { duration: 2, y: "0%", rotation: 0, ease: Bounce.easeOut });
 
   goBack.addEventListener("mouseenter", () => goBackGrow.pause());
-  goBack.addEventListener("mouseleave", () => goBackGrow.resume());
+  goBack.addEventListener("mouseleave", () => goBackGrow.resume()); */
   headerAnimation();
 }
 
