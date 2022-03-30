@@ -21,12 +21,23 @@ function start() {
 
   gsap.to(cleoSecondSection, {
     duration: 3,
-    x: "-70%",
+    x: "-28%",
     scrollTrigger: {
       trigger: "#cleo-second-section",
       scrub: 0.5,
       start: "-20% 80%",
       end: "bottom 40%",
+    },
+  });
+
+  gsap.to(cleoThirdSection, {
+    duration: 3,
+    x: "18%",
+    scrollTrigger: {
+      trigger: "#cleo-third-section",
+      scrub: 0.5,
+      start: "-20% 50%",
+      end: "120% 50%",
       markers: true,
     },
   });
