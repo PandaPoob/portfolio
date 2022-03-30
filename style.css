@@ -315,6 +315,10 @@ nav {
   padding-block: 1rem;
 }
 
+#projects h2 {
+  padding-bottom: 1rem;
+}
+
 .project-heading {
   margin: 2rem;
 }
@@ -472,6 +476,7 @@ footer .copyright {
 
 .project-page h3 {
   font-size: 1.5rem;
+  margin-right: 2rem;
 }
 
 .project-header {
@@ -529,7 +534,7 @@ footer .copyright {
 }
 
 .first_detail_colorbox {
-  padding-block: 2rem 0;
+  padding-block: 2rem 1rem;
   padding-inline: 1rem;
   background-color: var(--color-light);
 }
@@ -675,6 +680,11 @@ footer .copyright {
     margin-top: 0;
   }
 }
+@media (min-width: 777px) {
+  .card-container {
+    margin-top: 7rem;
+  }
+}
 
 @media (min-width: 960px) {
   /*Forside header*/
@@ -701,7 +711,7 @@ footer .copyright {
   }
 
   .card-container {
-    margin-top: 15rem;
+    margin-top: 10rem;
   }
 
   /*PROJECT PAGES*/
@@ -755,17 +765,23 @@ footer .copyright {
 
 @media (min-width: 1366px) {
   .first-detail {
-    margin-inline: 18rem 0;
+    display: grid;
+    grid-template-columns: 10% 1fr;
   }
+  .first_detail_colorbox {
+    grid-column: 2/3;
+  }
+
   .second-detail {
-    margin-inline: 0 18rem;
+    display: grid;
+    grid-template-columns: 1fr 10%;
   }
 
   .first_detail_colorbox {
-    padding-right: 16rem;
+    padding-right: 6rem;
   }
   .second_detail_colorbox {
-    padding-left: 16rem;
+    padding-left: 6rem;
   }
 
   .second_detail_colorbox {
@@ -784,6 +800,9 @@ footer .copyright {
 
   .mockup-right {
     padding-inline: 8rem;
+  }
+  .card-container {
+    margin-top: 15rem;
   }
 }
 

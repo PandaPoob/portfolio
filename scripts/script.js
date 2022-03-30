@@ -84,7 +84,6 @@ function frontpageScrollAnimations() {
       scrollTrigger: {
         trigger: "#contact",
         start: "30% 70%",
-        markers: true,
       },
     })
 
