@@ -103,7 +103,7 @@ input.button {
   padding-inline: 3rem;
 }
 
-/*Back top top button*/
+/*Go back button*/
 #go-back {
   position: sticky;
   top: 3rem;
@@ -125,6 +125,30 @@ input.button {
 .go-back-link:hover {
   color: var(--color-lighest);
   background-color: rgba(255, 41, 134, 0.925);
+}
+
+/*Back to index*/
+#go-back-cleo {
+  display: flex;
+  justify-content: center;
+  z-index: 4;
+  margin-bottom: 4rem;
+}
+
+.go-back-cleo-link {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+
+  border-radius: 1rem;
+  color: var(--color-lighest);
+  background-color: rgba(255, 41, 134, 0.925);
+  transition: 0.7s ease;
+}
+
+.go-back-cleo-link:hover {
+  color: var(--color-cta);
+  background-color: rgba(32, 16, 54, 0.925);
 }
 
 /*menu*/
@@ -592,7 +616,7 @@ footer .copyright {
 }
 
 #cleo h2 {
-  margin-top: 8rem;
+  margin-top: 10rem;
 }
 
 .cleo-gallery-img {
@@ -619,7 +643,7 @@ footer .copyright {
   gap: 1rem;
   min-height: 25vh;
   min-width: 150%;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 640px) {
@@ -876,5 +900,3 @@ progress::-moz-progress-bar {
   );
   background-attachment: fixed;
 }
-
-/*wiggle go back*/
