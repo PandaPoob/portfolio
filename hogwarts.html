@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Freja Hee Eun Smith-Pedersen</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/logo_og.svg" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html"
+        ><img class="logo" src="img/logo.svg" alt="logo"
+      /></a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <div id="go-back">
+      <a
+        id="go-back-link"
+        class="hover-effect-full hidden"
+        href="index.html#projects"
+        >🠔 Go back</a
+      >
+    </div>
+    <header class="project-header hidden">
+      <h1>Hacked Hogwarts Student List</h1>
+    </header>
+    <main id="hogwarts" class="project-page">
+      <section class="mockup">
+        <div class="mockup-left left">
+          <h3>Mockup</h3>
+          <img
+            class="mockup-img project-img"
+            src="img/fr_hogwarts.png"
+            alt="Hogwarts Mockup"
+          />
+        </div>
+        <div class="mockup-right right">
+          <h3>Introduction</h3>
+          <p>
+            In this project I pretended to be a newly hired frontender for the
+            wizard school Hogwarts. Therefore I had to build a student list from
+            the given data and also add functions like filtering, sorting and
+            searching so I could easily navigate the student list. I also needed
+            to able to appoint different students to different squads or roles
+            and even expel them. Furthermore I should also be able to click on
+            each individual student card to see more details. If you are feeling
+            rebellious you may want to consider clicking the button at the
+            bottom of the page....
+          </p>
+          <div class="link-buttons">
+            <form
+              target="_blank"
+              action="https://pandapoob.com/kea/hogwarts_hacked/"
+            >
+              <input class="button" type="submit" value="Link to Solution" />
+            </form>
+            <form
+              target="_blank"
+              action="https://github.com/PandaPoob/hacked_hogwarts"
+            >
+              <input class="button" type="submit" value="Link to Github" />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="first-detail right">
+        <div class="first_detail_colorbox">
+          <div class="first-detail-text">
+            <h3>Process</h3>
+            <p>
+              Because this assignment had a lot of requirements, some even
+              conflicting, I had to carefully plan my course of action. I did so
+              by first making a list of all the functions I knew I needed and
+              then breaking down the different functions into smaller activity
+              diagrams that helped me maintain an overview. <br />
+              Part of the assignment was that it was coded in vanilla
+              JavaScript. I did so and separated functions as much as possible
+              to make it more manageable.
+            </p>
+            <a
+              class="hover-effect-full"
+              target="_blank"
+              href="https://drive.google.com/file/d/1tFqKhCVJDInGpdy6O2ApfbZQMynVmxeY/view?usp=sharing"
+              >See full activity diagram here!</a
+            >
+          </div>
+          <div class="first-detail-img-container">
+            <img
+              class="first-detail-img project-img"
+              src="img/hg_1.png"
+              alt="Activity Diagram"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="second-detail left">
+        <div class="second_detail_colorbox">
+          <div class="second-detail-text">
+            <h3>UX</h3>
+            <p>
+              To make the student list more visually interesting and clear I
+              created small icons using Adobe Illustrator. I made house crests
+              for my filter, icons for active or expelled students and for the
+              inquisitor squad and prefects. I also did this to make the whole
+              student list more coherent. I also added a background color to the
+              filter that is chosen to let the user know what filter is
+              currently active. The colors showcased are also linked to the
+              students' house. For example all the Gryffindor students have a
+              red heading on their card and a red background in their details
+              popup. I did this through JavaScript.
+            </p>
+          </div>
+          <div class="second-detail-img-container">
+            <img
+              class="second-detail-img project-img"
+              src="img/hg_2.PNG"
+              alt="responsive mockup"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="footer">
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/freja-smith98/" target="_blank"
+            ><img class="footer-link" src="img/linkedin.svg" alt="LinkedIn"
+          /></a>
+          <a href="https://github.com/PandaPoob" target="_blank"
+            ><img class="footer-link" src="img/github.svg" alt="Github"
+          /></a>
+          <a href="mailto: frej400d@stud.kea.dk"
+            ><img class="footer-link" src="img/mail.svg" alt="Mail"
+          /></a>
+        </div>
+        <div class="copyright">
+          <p>© Freja Hee Eun Smith-Pedersen 2022</p>
+        </div>
+      </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="scripts/burgermenu.js"></script>
+    <script src="scripts/projects.js"></script>
+  </body>
+</html>
