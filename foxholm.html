@@ -16,6 +16,11 @@
     <link rel="icon" href="img/logo_og.svg" />
   </head>
   <body>
+    <section id="fx-popup" class="popup">
+     <div class="popup-container">
+       <img id="fx-img"  class="popup-img" src="/img/fx_popup.png" alt="">
+     </div>
+    </section>
     <nav class="navbar">
       <a href="index.html"
         ><img class="logo" src="img/logo.svg" alt="logo"
@@ -87,19 +92,14 @@
             <p>
           When analysing Foxholm's former website the menu and navigation was very confusing and overwhelming. Not only did the menu items have dropdowns but even some items in the dropdowns had dropdowns so you were able to expand the dropdown further than the viewport. Therefore we simplified the menu and tested what menu item names made the most sense for the users. We kept the menu item categories but only for clothing items and made a seperate menu item for brands. Furthermore we removed sizes from the menu and moved them to the individual pages of the categories.
             </p>
-            <a
-              class="hover-effect-full"
-              target="_blank"
-              href="https://drive.google.com/file/d/1v85SQ6sGYlmUjDMJvKYOl9Y_6NqZdO-s/view?usp=sharing"
-              >See expanded sitemap here!</a
-            >
           </div>
-          <div class="first-detail-img-container">
+          <div id="fx-popup-container" class="first-detail-img-container">
             <img
               class="first-detail-img project-img tall-img"
               src="img/fx_1.png"
               alt="Sitemap"
             />
+            <p id="fx-open-popup" class="hover-effect-full" >Click to expand!</p>
           </div>
         </div>
       </section>
@@ -145,5 +145,6 @@ In WordPress we created the pages that we wanted the loopview and filtering on a
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="scripts/burgermenu.js"></script>
     <script src="scripts/projects.js"></script>
+        <script src="scripts/fx_popup.js"></script>
   </body>
 </html>
