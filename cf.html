@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Freja Hee Eun Smith-Pedersen</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/logo_og.svg" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html"
+        ><img class="logo" src="img/logo.svg" alt="logo"
+      /></a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#footer" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+ <div id="go-back" class="left-back go-back-ani">
+        <a
+          class="go-back-link"
+          href="index.html#projects"
+          >🠔 Go back</a
+        >
+      </div>
+    <header class="project-header hidden">
+     
+    
+        <h1>CF Dans</h1>
+      </div>
+    </header>
+    <main id="cf" class="project-page">
+      <section class="mockup">
+        <div class="mockup-left left">
+          <h3>Mockup</h3>
+          <img
+            class="mockup-img project-img"
+            src="img/fr_cfdans.png"
+            alt="CF Mockup"
+          />
+        </div>
+        <div class="mockup-right right">
+          <h3>Introduction</h3>
+          <p>
+            I started this project because a friend of mine recommended me to the owner of CF Dans, Charlotte Frølund. She needed someone to set up a website so she could attract more participants/customers to her dance classes. She was active on some social media but had no other way of communicating to customers and therefore asked me to help her build a website with more information about her and the dance classes. To make the website I used the package manager npm, the tool Vite and the CSS preprocessor SASS.
+          </p>
+          <div class="link-buttons">
+            <form
+              target="_blank"
+              action="#"
+            >
+              <input class="button" type="submit" value="Link to Solution" />
+            </form>
+            <form
+              target="_blank"
+              action="https://github.com/PandaPoob/cf_dans_v2"
+            >
+              <input class="button" type="submit" value="Link to Github" />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="first-detail right">
+        <div class="first_detail_colorbox">
+          <div class="first-detail-text">
+            <h3>Visual design</h3>
+            <p>
+            Charlotte Frølund and I set up a meeting and I quickly found out that though she had plenty of dancing experience and had been dancing and teaching for many years she only recently decided to go independent. This meant that I design wise had a lot of choices to make since there was no established visual identity. I did some research within the industry and Charlotte Frølund had also provided me with names of some of her competitors. After the research I presented moodboards, colors, fonts, etc. to her to make sure we were on the same page. Before I started coding the website I presented a mockup to the client and made additional adjustments according to her feedback. 
+            </p>
+          
+          </div>
+          <div class="first-detail-img-container">
+            <img
+              class="first-detail-img project-img"
+              src="img/cf_1.PNG"
+              alt="CF mockups adobe xd"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="second-detail left">
+        <div class="second_detail_colorbox">
+          <div class="second-detail-text">
+            <h3>Process</h3>
+            <p>
+             Since I had just recently learned about npm I decided to take on a challenge and code the website using that. I had the most experience with the opinionated tool Vite so that is what I used. Though I knew using Vite would have a bunch of benefits like minifying my files I also used it because it can "convert Sass”' and I knew I wanted to use Sass. I used Sass to structure my stylesheets since the site would have a lot of pages and that meant a lot of styling. So in case Charlotte Frølund ever wanted to hand over her website to another multimedia designer or if I ever wanted to go back to it later, navigating the styling would not be an impossible task.      
+            </p>
+          </div>
+          <div class="second-detail-img-container">
+            <img
+              class="second-detail-img project-img"
+              id="wide-img"
+              src="img/cf_2.PNG"
+              alt="responsive mockup"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="footer">
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/freja-smith98/" target="_blank"
+            ><img class="footer-link" src="img/linkedin.svg" alt="LinkedIn"
+          /></a>
+          <a href="https://github.com/PandaPoob" target="_blank"
+            ><img class="footer-link" src="img/github.svg" alt="Github"
+          /></a>
+          <a href="mailto: frej400d@stud.kea.dk"
+            ><img class="footer-link" src="img/mail.svg" alt="Mail"
+          /></a>
+        </div>
+        <div class="copyright">
+          <p>© Freja Hee Eun Smith-Pedersen 2022</p>
+        </div>
+      </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="scripts/burgermenu.js"></script>
+    <script src="scripts/projects.js"></script>
+  </body>
+</html>

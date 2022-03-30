@@ -479,6 +479,10 @@ footer .copyright {
   max-height: 25rem;
 }
 
+#wide-img {
+  max-width: 35rem;
+}
+
 .mockup-right {
   background-color: var(--color-light);
   display: flex;
