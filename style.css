@@ -598,6 +598,14 @@ footer .copyright {
   position: relative;
   z-index: 1;
 }
+.cleo-text h1 {
+  margin-bottom: 0.5rem;
+}
+
+.cleo-text p {
+  margin-left: 0.3rem;
+}
+
 .header-cleo-img-container {
   display: flex;
   justify-content: center;
@@ -732,7 +740,7 @@ footer .copyright {
   /*CLEO PAGE*/
   #cleo-header {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 8rem;
@@ -850,6 +858,10 @@ footer .copyright {
 
 .bottom {
   transform: translateY(100%);
+}
+
+.cleo-header-right {
+  transform: translateX(220%);
 }
 
 .cleo-right {
