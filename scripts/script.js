@@ -83,7 +83,7 @@ function frontpageScrollAnimations() {
     .timeline({
       scrollTrigger: {
         trigger: "#contact",
-        start: "20% 70%",
+        start: "40% 70%",
       },
     })
 

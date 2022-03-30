@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Freja Hee Eun Smith-Pedersen</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/logo_og.svg" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html"
+        ><img class="logo" src="img/logo.svg" alt="logo"
+      /></a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#footer" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+ <div id="go-back"  >
+        <a
+          class="left"
+          id="go-back-ani"
+          href="index.html#projects"
+          >🠔 Go back</a
+        >
+      </div>
+    <header class="project-header hidden">
+        <h1>Foxholm</h1>
+      </div>
+    </header>
+    <main id="foxholm" class="project-page">
+      <section class="mockup">
+        <div class="mockup-left left">
+          <h3>Mockup</h3>
+          <img
+            class="mockup-img project-img"
+            src="img/fr_foxholm.png"
+            alt="Foxholm Mockup"
+          />
+        </div>
+        <div class="mockup-right right">
+          <h3>Introduction</h3>
+          <p>
+           During this project I worked in a group to redesign Foxholm's website. In order to do this we used the process method "design thinking", which means that we worked iteratively through the different phases. We worked with the CMS system Wordpress to make the website and created our own child theme in order to customize and have more control over the style. A lot of results from research went into consideration while redesigning the website and no decision was made without documentation.   
+          </p>
+          <div class="link-buttons">
+            <form
+              target="_blank"
+              action="https://pandapoob.com/kea/10_eksamensprojekt/foxholm"
+            >
+              <input class="button" type="submit" value="Link to Redesign" />
+            </form>
+            <form
+              target="_blank"
+              action="https://github.com/PandaPoob/foxholm"
+            >
+              <input class="button" type="submit" value="Link to Github" />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="first-detail right">
+        <div class="first_detail_colorbox">
+          <div class="first-detail-text">
+            <h3>UX</h3>
+            <p>
+          When analysing Foxholm's former website the menu and navigation was very confusing and overwhelming. Not only did the menu items have dropdowns but even some items in the dropdowns had dropdowns so you were able to expand the dropdown further than the viewport. Therefore we simplified the menu and tested what menu item names made the most sense for the users. We kept the menu item categories but only for clothing items and made a seperate menu item for brands. Furthermore we removed sizes from the menu and moved them to the individual pages of the categories.
+            </p>
+            <a
+              class="hover-effect-full"
+              target="_blank"
+              href="https://drive.google.com/file/d/1tFqKhCVJDInGpdy6O2ApfbZQMynVmxeY/view?usp=sharing"
+              >See expanded sitemap here!</a
+            >
+          </div>
+          <div class="first-detail-img-container">
+            <img
+              class="first-detail-img project-img tall-img"
+              src="img/fx_1.png"
+              alt="State Machine Diagram"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="second-detail left">
+        <div class="second_detail_colorbox">
+          <div class="second-detail-text">
+            <h3>Wordpress process</h3>
+            <p>
+          Setting up the actual pages for all of Foxholm's wares with a filter required us to download the wordpress-plugin Pods so we could store our data. We created Custom Post Pods for all of our wares where we added "fields", the information we wanted displayed in our loop and singleview. <br>
+
+In WordPress we created the pages that we wanted the loopview and filtering on and gave the pages unique "slugs". Then we created php pages in our child theme and linked them with the desired Wordpress page via the "slugs". Through Wordpress' REST API we then got the data and through JavaScript code we put our data into our template/article, that we made in the php file, and cloned the article to get our desired loop view.
+            </p>
+          </div>
+          <div class="second-detail-img-container">
+            <img
+              class="second-detail-img project-img"
+              src="img/fx_2.PNG"
+              alt="List view"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="footer">
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/freja-smith98/" target="_blank"
+            ><img class="footer-link" src="img/linkedin.svg" alt="LinkedIn"
+          /></a>
+          <a href="https://github.com/PandaPoob" target="_blank"
+            ><img class="footer-link" src="img/github.svg" alt="Github"
+          /></a>
+          <a href="mailto: frej400d@stud.kea.dk"
+            ><img class="footer-link" src="img/mail.svg" alt="Mail"
+          /></a>
+        </div>
+        <div class="copyright">
+          <p>© Freja Hee Eun Smith-Pedersen 2022</p>
+        </div>
+      </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="scripts/burgermenu.js"></script>
+    <script src="scripts/projects.js"></script>
+  </body>
+</html>
