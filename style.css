@@ -106,17 +106,25 @@ input.button {
 /*Back top top button*/
 #go-back {
   position: sticky;
-  top: 2.1rem;
+  top: 3rem;
   margin-top: 4rem;
   margin-left: 1rem;
   z-index: 4;
 }
 
-#go-back a {
+.go-back-link {
   color: var(--color-cta);
   text-decoration: none;
   font-weight: 600;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.925);
+  border-radius: 1rem;
+  transition: 0.7s ease;
+}
+
+.go-back-link:hover {
+  color: var(--color-lighest);
+  background-color: rgba(255, 41, 134, 0.925);
 }
 
 /*menu*/
@@ -343,7 +351,7 @@ nav {
 }
 
 /*contact*/
-#contact-me {
+#contact {
   padding-block: 6rem 0;
   display: grid;
   justify-content: center;
@@ -351,12 +359,12 @@ nav {
   margin-bottom: -0.5rem;
 }
 
-#contact-me h2 {
+#contact h2 {
   color: var(--color-lighest);
   margin-bottom: 2rem;
 }
 
-#contact-me p {
+#contact p {
   color: var(--color-lighest);
 }
 
@@ -464,6 +472,11 @@ footer .copyright {
 }
 .project-img {
   max-width: 30rem;
+}
+
+.tall-img {
+  max-width: 30rem;
+  max-height: 25rem;
 }
 
 .mockup-right {
@@ -617,6 +630,10 @@ footer .copyright {
     padding-inline: 3rem;
     height: 25rem;
   }
+  .first-detail-img-container {
+    margin-top: 0;
+  }
+
   .second-detail-img-container {
     margin-top: 0;
     grid-row: 1/2;
@@ -725,6 +742,10 @@ footer .copyright {
 .left {
   transform: translateX(-100%);
   opacity: 0;
+}
+
+.left-back {
+  transform: translateX(-100%);
 }
 
 .bottom {

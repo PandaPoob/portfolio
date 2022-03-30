@@ -4,8 +4,14 @@ window.addEventListener("DOMContentLoaded", start);
 
 function start() {
   console.log("Welcome");
-  let goBack = document.querySelector("#go-back-link");
-  gsap.to(goBack, { delay: 2.5, duration: 1, x: "0%", opacity: 1 });
+  let goBack = document.querySelector(".go-back-ani");
+  gsap.to(goBack, {
+    delay: 1.1,
+    duration: 2,
+    x: "0%",
+    opacity: 1,
+    ease: Power2.easeOut,
+  });
 
   let goBackGrow = gsap
     .timeline({
@@ -18,13 +24,11 @@ function start() {
     })
     .to(goBack, { duration: 0.1, y: "0%" })
     .to(goBack, { duration: 1.5, y: "-2rem", ease: Expo.easeOut })
-    .to(goBack, { duration: 0.2, rotation: 5, transformOrigin: "top 50%" })
-    .to(goBack, { duration: 0.2, rotation: -5, transformOrigin: "top 50%" })
-    .to(goBack, { duration: 0.2, rotation: 5, transformOrigin: "top 50%" })
-    .to(goBack, { duration: 0.2, rotation: -5, transformOrigin: "top 50%" })
+    .to(goBack, { duration: 0.2, rotation: 5, transformOrigin: "left 50%" })
+    .to(goBack, { duration: 0.2, rotation: -5, transformOrigin: "left 50%" })
+    .to(goBack, { duration: 0.2, rotation: 5, transformOrigin: "left 50%" })
+    .to(goBack, { duration: 0.2, rotation: -5, transformOrigin: "left 50%" })
     .to(goBack, { duration: 2, y: "0%", rotation: 0, ease: Bounce.easeOut });
-  //.to(goBack, { duration: 1.2, scale: 1.2 })
-  //.to(goBack, { duration: 1.2, scale: 1 });
 
   goBack.addEventListener("mouseenter", () => goBackGrow.pause());
   goBack.addEventListener("mouseleave", () => goBackGrow.resume());
