@@ -88,7 +88,7 @@ function frontpageScrollAnimations() {
     })
 
     .to(circle, {
-      y: "-20%",
+      y: "-25%",
       duration: 0.5,
     })
 

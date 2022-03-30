@@ -4,19 +4,16 @@ window.addEventListener("DOMContentLoaded", start);
 
 function start() {
   console.log("Welcome");
-  let ntl = gsap.timeline({ repeat: 0, repeatDelay: 0 });
   let goBack = document.querySelector("#go-back-link");
+  gsap.to(goBack, { delay: 2.5, duration: 1, x: "0%", opacity: 1 });
 
-  ntl.to(goBack, { duration: 0.2, opacity: 0, scale: 0.6 });
-  ntl.to(goBack, { duration: 0.5, opacity: 1, scale: 1 });
   let goBackGrow = gsap
     .timeline({
       repeat: Infinity,
-      repeatDelay: 5,
+      repeatDelay: 8,
       scrollTrigger: {
         trigger: ".first-detail",
         start: "20% 70%",
-        markers: true,
       },
     })
     .to(goBack, { duration: 0.1, y: "0%" })
