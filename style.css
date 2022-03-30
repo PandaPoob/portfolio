@@ -547,12 +547,17 @@ footer .copyright {
 .second_detail_colorbox a {
   color: var(--color-cta);
   text-decoration: none;
+  padding-bottom: 0.5rem;
 }
 
 .second-detail-img-container {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+}
+
+.game-h3 {
+  margin-right: 3rem;
 }
 
 @media (min-width: 640px) {

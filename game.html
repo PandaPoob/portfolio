@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Freja Hee Eun Smith-Pedersen</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/logo_og.svg" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html"
+        ><img class="logo" src="img/logo.svg" alt="logo"
+      /></a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#footer" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+ <div id="go-back" class="left-back go-back-ani">
+        <a
+          class="go-back-link"
+          href="index.html#projects"
+          >🠔 Go back</a
+        >
+      </div>
+    <header class="project-header hidden">
+     
+    
+        <h1>Whack-A-Panda</h1>
+      </div>
+    </header>
+    <main id="game" class="project-page">
+      <section class="mockup">
+        <div class="mockup-left left">
+          <h3 class="game-h3">Mockup</h3>
+          <img
+            class="mockup-img project-img"
+            src="img/fr_game.png"
+            alt="Game Mockup"
+          />
+        </div>
+        <div class="mockup-right right">
+          <h3>Introduction</h3>
+          <p>
+          During this project I created my very own game using vanilla HTML, CSS and JavaScript. The game is a simple clicking-game inspired by the classic arcade game Whack-A-Mole. This was my first time working with JavaScript. Throughout the project I learned the basics and the logic of the language. I was also introduced to thinking about ways to engage and motivate users with interactive animations.  
+          </p>
+          <div class="link-buttons">
+            <form
+              target="_blank"
+              action="https://pandapoob.com/kea/04_animation/spil/"
+            >
+              <input class="button" type="submit" value="Play Game" />
+            </form>
+            <form
+              target="_blank"
+              action="https://github.com/PandaPoob/whack-a-panda"
+            >
+              <input class="button" type="submit" value="Link to Github" />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="first-detail right">
+        <div class="first_detail_colorbox">
+          <div class="first-detail-text">
+            <h3>Idea</h3>
+            <p>
+            The theme of the game stems from the name I use online "PandaPoob". That is why the main elements are pandas and poops. I wanted to retain the feel of the game I was inspired by (Whack-A-Mole) and therefore I created my backgrounds as if you were playing on an arcade machine. To strengthen this old school feel I created all of my art elements as pixel art. Everything was created in Adobe Illustrator.
+
+            </p>
+           
+        
+          </div>
+          <div class="first-detail-img-container">
+            <img
+              class="first-detail-img project-img"
+              src="img/game_1.PNG"
+              alt="adobe illustrator"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="second-detail left">
+        <div class="second_detail_colorbox">
+          <div class="second-detail-text">
+            <h3>Process</h3>
+            <p>
+             Since this was my first experience with JavaScript I started small to not overwhelm myself.  First I planned and made a state machine diagram to get an overview of my game. Then coded the animations and functions and tested them to make sure they worked. During this phase I got very familiar with the Firefox inspector and console. After finishing the main animations and functions I carefully linked it all together. <br>
+
+After the game was working I tested it on users and adjusted based on the feedback. I slowed down the speed because the majority of users thought the game was too hard and I also added text to my info screen to clarify the rules.
+
+            </p>
+              <a
+              class="hover-effect-full"
+              target="_blank"
+              href="https://drive.google.com/file/d/1Uoa_n_oEXJb3c_rz07YfWKmkEyrIlSN9/view?usp=sharing"
+              >See expanded diagram here!</a
+            >
+          </div>
+          <div class="second-detail-img-container">
+            <img
+              class="second-detail-img project-img"
+              src="img/game_2.png"
+              alt="State Machine Diagram"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="footer">
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/freja-smith98/" target="_blank"
+            ><img class="footer-link" src="img/linkedin.svg" alt="LinkedIn"
+          /></a>
+          <a href="https://github.com/PandaPoob" target="_blank"
+            ><img class="footer-link" src="img/github.svg" alt="Github"
+          /></a>
+          <a href="mailto: frej400d@stud.kea.dk"
+            ><img class="footer-link" src="img/mail.svg" alt="Mail"
+          /></a>
+        </div>
+        <div class="copyright">
+          <p>© Freja Hee Eun Smith-Pedersen 2022</p>
+        </div>
+      </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="scripts/burgermenu.js"></script>
+    <script src="scripts/projects.js"></script>
+  </body>
+</html>
