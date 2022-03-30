@@ -16,6 +16,11 @@
     <link rel="icon" href="img/logo_og.svg" />
   </head>
   <body>
+      <section id="game-popup" class="popup">
+     <div id="game-popup-container-1" class="popup-container">
+       <img id="game-img"  class="popup-img" src="/img/game_popup.png" alt="">
+     </div>
+    </section>
     <nav class="navbar">
       <a href="index.html"
         ><img class="logo" src="img/logo.svg" alt="logo"
@@ -112,19 +117,16 @@
 After the game was working I tested it on users and adjusted based on the feedback. I slowed down the speed because the majority of users thought the game was too hard and I also added text to my info screen to clarify the rules.
 
             </p>
-              <a
-              class="hover-effect-full"
-              target="_blank"
-              href="https://drive.google.com/file/d/1Uoa_n_oEXJb3c_rz07YfWKmkEyrIlSN9/view?usp=sharing"
-              >See expanded diagram here!</a
-            >
+             
+            
           </div>
-          <div class="second-detail-img-container">
+          <div id="game-popup-container" class="second-detail-img-container">
             <img
               class="second-detail-img project-img"
               src="img/game_2.png"
               alt="State Machine Diagram"
             />
+             <p id="game-open-popup" class="hover-effect-full" >See expanded diagram here!</p>
           </div>
         </div>
       </section>
@@ -151,5 +153,6 @@ After the game was working I tested it on users and adjusted based on the feedba
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="scripts/burgermenu.js"></script>
     <script src="scripts/projects.js"></script>
+    <script src="scripts/game_popup.js"></script>
   </body>
 </html>

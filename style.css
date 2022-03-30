@@ -850,7 +850,7 @@ progress::-moz-progress-bar {
 .popup {
   overflow: hidden;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   background-color: #00000099;
   position: fixed;
   top: 0;
@@ -893,9 +893,25 @@ progress::-moz-progress-bar {
 }
 
 #fx-popup-container p {
-  margin-top: -1rem;
+  margin-top: -0.5rem;
   cursor: pointer;
   position: relative;
   z-index: 1;
   color: var(--color-cta);
+}
+
+#game-popup-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+#game-popup-container p {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  color: var(--color-cta);
+}
+
+#game-popup-container-1 {
+  margin-top: 5rem;
 }
