@@ -126,31 +126,6 @@ input.button {
   color: var(--color-cta);
   background-color: rgba(32, 16, 54, 0.925);
 }
-
-/*Back to index*/
-/* #go-back-cleo {
-  position: sticky;
-  top: 1rem;
-  margin-top: 1rem;
-  margin-left: 0.5rem;
-  z-index: 4;
-}
-
-.go-back-cleo-link {
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
-  border-radius: 1rem;
-  color: var(--color-lighest);
-  background-color: rgba(255, 41, 134, 0.925);
-  transition: 0.7s ease;
-}
-
-.go-back-cleo-link:hover {
-  color: var(--color-cta);
-  background-color: rgba(32, 16, 54, 0.925);
-} */
-
 /*menu*/
 .logo {
   width: 3rem;
@@ -256,6 +231,15 @@ nav {
 
 .h1-bold {
   font-weight: 500;
+}
+
+.header-text h1 {
+  margin-bottom: 0;
+}
+
+.header-text p {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .header-img {
@@ -699,6 +683,11 @@ footer .copyright {
 
   .header-text {
     margin-block: 1rem;
+  }
+
+  .header-text p {
+    text-align: left;
+    margin-left: 0.3rem;
   }
   /*About*/
   #about {
