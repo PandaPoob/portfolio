@@ -12,8 +12,7 @@ function showFxImg() {
   const gamePopup = document.querySelector("#game-popup");
   gamePopup.style.display = "block";
 
-  const container = document.querySelector(".popup-container");
-  container.addEventListener("click", closeGameImg);
+  gamePopup.addEventListener("click", closeGameImg);
 }
 
 function closeGameImg() {
