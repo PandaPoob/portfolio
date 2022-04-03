@@ -53,17 +53,22 @@ function frontpageScrollAnimations() {
     },
   });
 
+  gsap.to("#skill-h2", {
+    opacity: 1,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#skills",
+      start: "top 70%",
+    },
+  });
+
   gsap
     .timeline({
       scrollTrigger: {
         trigger: "#skills",
         start: "top 70%",
       },
-    })
-
-    .to("#skill-h2", {
-      opacity: 1,
-      duration: 0.5,
     })
 
     .to("#skill-line", {
@@ -78,14 +83,15 @@ function frontpageScrollAnimations() {
     })
 
     .to("#skill-line", {
+      ease: Power3.easeOut,
       scaleX: 1,
-      duration: 0.8,
+      duration: 1.5,
     })
 
     .to(".skills-container", {
       y: "5vw",
       opacity: 0,
-      duration: 0.1,
+      duration: 0,
     })
 
     .to(".skills-container", {
