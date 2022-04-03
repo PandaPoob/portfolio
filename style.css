@@ -292,6 +292,32 @@ nav {
   padding-bottom: 0.5rem;
 }
 
+/*skills*/
+#skills {
+  background-color: var(--color-lighter);
+}
+
+.skill-img {
+  width: 3rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skill {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
 /*projects*/
 #projects {
   margin-top: 8rem;
