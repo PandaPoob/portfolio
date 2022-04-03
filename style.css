@@ -309,10 +309,12 @@ nav {
 p.skill-instruc {
   text-align: center;
 }
-
-#skills hr {
-  color: var(--color-dark);
-  margin-inline: 2rem;
+#skill-line {
+  margin-top: 1rem;
+  background-color: var(--color-dark);
+  height: 0.2rem;
+  margin-inline: auto;
+  width: 90%;
 }
 
 #skills h3 {
@@ -834,10 +836,6 @@ p.tech-stack {
   }
   .card-container {
     margin-top: 15rem;
-  }
-
-  #skills hr {
-    margin-inline: 8rem;
   }
 
   .skills-container {

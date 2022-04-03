@@ -53,6 +53,74 @@ function frontpageScrollAnimations() {
     },
   });
 
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: "#skills",
+        start: "30% 70%",
+        start: "top 70%",
+        markers: true,
+      },
+    })
+
+    .to("#skill-h2", {
+      opacity: 1,
+      duration: 0.5,
+    })
+
+    .to("#skill-line", {
+      scaleX: 0,
+      opacity: 0,
+      duration: 0.1,
+    })
+
+    .to("#skill-line", {
+      opacity: 1,
+      duration: 0.1,
+    })
+
+    .to("#skill-line", {
+      scaleX: 1,
+      duration: 0.8,
+    })
+
+    .to(".skills-container", {
+      y: "5vw",
+      opacity: 0,
+      duration: 0.1,
+    })
+
+    .to(".skills-container", {
+      y: "-1vw",
+      opacity: 1,
+      duration: 0.6,
+      ease: "power3.out",
+    })
+
+    .to(".skills-container", {
+      y: 0,
+      opacity: 1,
+      duration: 0.8,
+      ease: Bounce.easeOut,
+    })
+
+    .to(".skill-instruc", {
+      opacity: 1,
+      duration: 0.7,
+    });
+
+  /*   gsap.to("#skill-line", {
+    scaleX: 1,
+    opacity: 1,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#skills",
+      start: "top 70%",
+      markers: true,
+    },
+  }); */
+
   gsap.to(".project-heading", {
     opacity: 1,
     duration: 1.5,
@@ -75,7 +143,6 @@ function frontpageScrollAnimations() {
       scrub: 0.5,
       start: "10% 60%",
       end: "17% 50%",
-      markers: true,
     },
   });
 
