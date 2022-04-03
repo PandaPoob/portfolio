@@ -332,9 +332,8 @@ p.skill-instruc {
 }
 
 .skills-container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 4rem;
   margin-top: 4rem;
 }
@@ -706,6 +705,10 @@ p.tech-stack {
   .card-container {
     margin-top: 7rem;
   }
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media (min-width: 960px) {
@@ -744,6 +747,7 @@ p.tech-stack {
   /*skills*/
   .skills-container {
     display: flex;
+    justify-content: space-evenly;
     gap: 8rem;
   }
 
