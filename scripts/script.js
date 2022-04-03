@@ -18,12 +18,12 @@ function start() {
   let arrow = document.querySelector("#arrow");
   let tl = gsap.timeline({ repeat: 0, repeatDelay: 1 });
   tl.to(headerImg, { duration: 0.1, opacity: 0, scale: 0.6 });
-  tl.to(headerImg, { duration: 1.2, opacity: 1, scale: 1 });
+  tl.to(headerImg, { duration: 0.8, opacity: 1, scale: 1 });
   tl.to(headerText, { duration: 0.2, opacity: 0, y: "5rem" });
   tl.to(headerText, { duration: 0.5, opacity: 1, y: "-2rem" });
   tl.to(headerText, { duration: 0.8, opacity: 1, ease: Bounce.easeOut, y: 0 });
   tl.to(headerImg, {
-    duration: 1,
+    duration: 0.5,
     boxShadow: "0 0 40px 40px #ff2986",
   });
   tl.to(arrow, 0.5, { css: { className: "+=bouncing" } });
@@ -55,7 +55,7 @@ function frontpageScrollAnimations() {
 
   gsap.to("#skill-h2", {
     opacity: 1,
-    duration: 1.5,
+    duration: 1.2,
     ease: "power3.out",
     scrollTrigger: {
       trigger: "#skills",
@@ -85,7 +85,7 @@ function frontpageScrollAnimations() {
     .to("#skill-line", {
       ease: Power3.easeOut,
       scaleX: 1,
-      duration: 1.5,
+      duration: 1.2,
     })
 
     .to(".skills-container", {
