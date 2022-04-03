@@ -306,6 +306,10 @@ nav {
   margin-top: -6rem;
 }
 
+p.skill-instruc {
+  text-align: center;
+}
+
 #skills hr {
   color: var(--color-dark);
   margin-inline: 2rem;
