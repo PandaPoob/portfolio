@@ -749,9 +749,10 @@ p.tech-stack {
 
   /*skills*/
   .skills-container {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+    margin-inline: 2rem;
   }
 
   /*PROJECT PAGES*/
@@ -846,7 +847,7 @@ p.tech-stack {
   }
 
   .skills-container {
-    margin-inline: 6rem;
+    margin-inline: 8rem;
   }
 }
 
