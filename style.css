@@ -268,6 +268,7 @@ nav {
 #about {
   margin-inline: 1rem;
   padding-top: 1rem;
+  margin-bottom: 8rem;
 }
 
 .about-text {
@@ -294,35 +295,87 @@ nav {
 
 /*skills*/
 #skills {
+  padding-block: 10rem 8rem;
   background-color: var(--color-lighter);
+  min-height: 60vh;
+  display: grid;
+  align-content: center;
+}
+
+#skills h2 {
+  margin-top: -6rem;
+}
+
+#skills hr {
+  color: var(--color-dark);
+  margin-inline: 2rem;
+}
+
+#skills h3 {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .skill-img {
   width: 3rem;
 }
 
+.skill-img-container {
+  margin-inline: auto;
+}
+
 .skills-container {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-top: 4rem;
 }
 
 .column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 4rem;
 }
 
 .skill {
   display: grid;
   justify-content: center;
-  align-content: center;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 /*projects*/
 #projects {
-  margin-top: 8rem;
   background-color: var(--color-light);
-  padding-block: 1rem;
+  padding-block: 6rem 1rem;
 }
 
 #projects h2 {
@@ -679,6 +732,12 @@ p.tech-stack {
     margin-top: 10rem;
   }
 
+  /*skills*/
+  .skills-container {
+    display: flex;
+    gap: 8rem;
+  }
+
   /*PROJECT PAGES*/
   .mockup {
     display: grid;
@@ -768,6 +827,14 @@ p.tech-stack {
   }
   .card-container {
     margin-top: 15rem;
+  }
+
+  #skills hr {
+    margin-inline: 8rem;
+  }
+
+  .skills-container {
+    margin-inline: 6rem;
   }
 }
 
