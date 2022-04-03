@@ -73,8 +73,9 @@ function frontpageScrollAnimations() {
     scrollTrigger: {
       trigger: "#projects",
       scrub: 0.5,
-      start: "top 70%",
-      end: "10% 50%",
+      start: "10% 60%",
+      end: "17% 50%",
+      markers: true,
     },
   });
 
