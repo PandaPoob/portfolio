@@ -570,7 +570,7 @@ footer .copyright {
   padding-block: 2rem;
 }
 .mockup-left h3 {
-  margin-right: 24.5rem;
+  margin-right: 70%;
 }
 
 .mockup-img-container {
@@ -699,6 +699,9 @@ p.tech-stack {
 
   footer .copyright {
     margin-top: 0;
+  }
+  .mockup-left h3 {
+    margin-right: 24.5rem;
   }
 }
 @media (min-width: 777px) {
