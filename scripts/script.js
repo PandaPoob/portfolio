@@ -57,9 +57,7 @@ function frontpageScrollAnimations() {
     .timeline({
       scrollTrigger: {
         trigger: "#skills",
-        start: "30% 70%",
         start: "top 70%",
-        markers: true,
       },
     })
 
@@ -108,18 +106,6 @@ function frontpageScrollAnimations() {
       opacity: 1,
       duration: 0.7,
     });
-
-  /*   gsap.to("#skill-line", {
-    scaleX: 1,
-    opacity: 1,
-    duration: 1.5,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: "#skills",
-      start: "top 70%",
-      markers: true,
-    },
-  }); */
 
   gsap.to(".project-heading", {
     opacity: 1,
