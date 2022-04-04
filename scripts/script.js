@@ -13,6 +13,11 @@ function start() {
       end: "90% 70%",
     },
   });
+
+  headerAnimations();
+}
+
+function headerAnimations() {
   let headerImg = document.querySelector(".header-img");
   let headerText = document.querySelector(".header-text");
   let arrow = document.querySelector("#arrow");
@@ -27,9 +32,9 @@ function start() {
     boxShadow: "0 0 40px 40px #ff2986",
   });
   tl.to(arrow, 0.5, { css: { className: "+=bouncing" } });
-
   frontpageScrollAnimations();
 }
+
 function frontpageScrollAnimations() {
   gsap.to(".about-texts", {
     x: "0%",
