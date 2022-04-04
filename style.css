@@ -17,6 +17,10 @@
   --font-paragraph: "Source Sans Pro", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
