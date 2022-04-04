@@ -136,7 +136,7 @@ function frontpageScrollAnimations() {
     duration: 1.5,
     ease: "power3.out",
     scrollTrigger: {
-      trigger: "#about",
+      trigger: "#skills",
       scrub: 0.5,
       start: "bottom 70%",
       end: "150% 70%",

@@ -398,11 +398,11 @@ p.skill-instruc {
 /*projects*/
 #projects {
   background-color: var(--color-light);
-  padding-block: 6rem 1rem;
+  padding-block: 4rem 1rem;
 }
 
 #projects h2 {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .project-heading {
