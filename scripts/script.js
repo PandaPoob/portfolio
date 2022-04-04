@@ -14,6 +14,19 @@ function start() {
     },
   });
 
+  let prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("nav").style.top = "0";
+    } else {
+      (document.getElementById("nav").style.top = "-6rem"),
+        document.querySelector(".nav-menu").classList.remove("active"),
+        document.querySelector(".hamburger").classList.remove("active");
+    }
+    prevScrollpos = currentScrollPos;
+  };
+
   headerAnimations();
 }
 
