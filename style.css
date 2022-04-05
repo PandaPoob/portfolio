@@ -319,11 +319,27 @@ nav {
 
 #skills h2 {
   margin-top: -6rem;
+  margin-bottom: 2rem;
 }
 
-p.skill-instruc {
+h3#skill-instruc {
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
+
+.skill-text {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-inline: 1rem;
+}
+
+.skill-text h4 {
+  color: var(--color-dark);
+  margin-top: 1.4rem;
+}
+
 #skill-line {
   margin-top: 1rem;
   background-color: var(--color-dark);
@@ -332,10 +348,18 @@ p.skill-instruc {
   width: 90%;
 }
 
-#skills h3 {
+.skills-container h3 {
   margin-top: 0.5rem;
   text-align: center;
   font-size: 1.2rem;
+}
+
+.skill-hover {
+  display: none;
+}
+
+.skill-click {
+  display: inline;
 }
 
 .skill-img {
@@ -768,6 +792,21 @@ p.tech-stack {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 4rem;
     margin-inline: 2rem;
+  }
+
+  .skill-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .skill-hover {
+    display: inline;
+  }
+
+  .skill-click {
+    display: none;
   }
 
   /*PROJECT PAGES*/

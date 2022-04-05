@@ -126,7 +126,7 @@ function frontpageScrollAnimations() {
       ease: Bounce.easeOut,
     })
 
-    .to(".skill-instruc", {
+    .to(".skill-text", {
       opacity: 1,
       duration: 0.7,
     });
