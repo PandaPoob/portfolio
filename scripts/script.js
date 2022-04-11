@@ -106,6 +106,11 @@ function frontpageScrollAnimations() {
       duration: 1.2,
     })
 
+    .to(".skill-text", {
+      opacity: 1,
+      duration: 0.7,
+    })
+
     .to(".skills-container", {
       y: "5vw",
       opacity: 0,
@@ -124,11 +129,6 @@ function frontpageScrollAnimations() {
       opacity: 1,
       duration: 0.8,
       ease: Bounce.easeOut,
-    })
-
-    .to(".skill-text", {
-      opacity: 1,
-      duration: 0.7,
     });
 
   gsap.to(".project-heading", {
