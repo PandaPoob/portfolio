@@ -135,7 +135,7 @@ input.button {
   width: 3rem;
 }
 
-nav {
+#nav {
   position: fixed;
   top: 0;
   left: 0;
